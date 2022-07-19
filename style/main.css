@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap');
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Lato', sans-serif; */
+:root {
+    --green: rgba(1, 153, 109, 1);
+    --gray-text: rgba(66, 66, 66, 1);
+    --green-bcg: rgba(36, 88, 82, 1);
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: rgba(41, 41, 41, 1);
+}
+
+.line {
+    border-top: 1px solid rgba(214, 214, 214, 1);
+}
+
+.header {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header--nav {
+    padding: 30px 0;
+    gap: 25px 0;
+}
+
+.header--nav, .nav__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav__list {
+    gap: 15px 70px ;
+}
+
+.nav__font {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.buttom {
+    background-color: var(--green);
+    border-radius: 4px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid var(--green);
+    transition: 0.4s;
+}
+
+.buttom:hover {
+    background-color: white;
+    color: rgba(72, 72, 72, 1);
+    border: 1px solid black;
+}
+
+.buttom__start {
+    padding: 13px 50px;
+    margin-left: 35px;
+}
+
+
+.main__wrapper {
+    margin: 0 auto;
+    background-image: url(../assets/images/bcg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 895px;
+    padding: 175px 0 336px 0;
+}
+
+.main--title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 35px;
+}
+
+
+.h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 74px;
+    color: var(--green);
+}
+
+.title--text {
+    line-height: 31px;
+    color: #484848;
+}
+
+.buttom__find {
+    line-height: 25px;
+    padding: 20px 50px;
+    max-width: 230px;
+}
+
+
+.main--content {
+    font-family: 'Lato', sans-serif;
+    padding: 158px 20px 52px 20px;
+    color: var(--gray-text);
+}
+
+.content--items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.text__small {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.box__size {
+    max-width: 671px;
+}
+
+.inscription, .item__description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 157%;
+    font-family: 'Lato', sans-serif;
+}
+
+.normal_text {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    line-height: 157%;
+    color: var(--green);
+    max-width: 584px;
+}
+
+/* cards */
+
+.main--cards {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+}
+
+.card {
+    max-width: 390px;
+    position: relative;
+    overflow: hidden;
+}
+
+.number--name {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.card__number {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+.card__name {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50.01%;
+    left: 25.91%;
+}
+
+.card p {
+    padding-bottom: 60px;
+}
+
+.card__image {
+    position: relative;
+    border-radius: 12px;
+}
+
+.nested--image {
+    position: absolute;
+    top: 226px;
+    left: 206px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.pos_mod_2 {
+    left: 52px;
+}
+
+.pos_mod_3 {
+    top: 102px;
+    left: 145px;
+}
+ 
+/* НЕ МОГУ ПОНЯТЬ КАКИМ СПОСОБОМ ПРАВИЛЬНО ВЫСТАВИТЬ КАРТОЧКИ НА РАЗНОМ УРОВНЕ ТАК, ЧТО БЫ ЭТО ОДИНАКОВО ХОРОШО СМОТРЕЛОСЬ И НА РОДНОМ РАЗРЕШЕНИИ, И НА RESPONSIVE */
+
+.card__pos2 {
+    /* position: absolute;
+    left: 492px;
+    top: 367px; */
+    margin-top: 245px;
+}
+
+.card__pos3 {
+    /* position: absolute;
+    top: 160px;
+    right: 0px; */
+    margin-top: 50px;
+}
+
+/* video */
+
+.green__wrap {
+    background-color: var(--green-bcg);
+    
+}
+
+.main--video {
+    max-width: 1506px;
+    margin: 0 auto;
+    padding: 229px 20px 176px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+}
+
+.description>h2  {
+    color: white;
+}
+
+.description>p {
+    color: white;
+    font-size: 25px;
+    line-height: 157%;
+}
+
+.buttom_lets {
+    padding: 20px 50px;
+    max-width: 245px;
+}
+
+.video--container {
+    max-width: 860px;
+}
+
+.video {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.main--product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 120px 20px 200px 20px;
+}
+
+.product {
+    position: relative;
+}
+
+.product--img {
+    background-color: rgba(1, 153, 109, 0.2);
+    border-radius: 18px;
+    max-width: 427px;
+}
+
+/* product-card */
+
+.product--card {
+    box-shadow: 0px 0px 5px 0px gray;
+    max-width: 293px;
+    padding: 22px 55px 30px 61px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 157%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    position: absolute;
+    top: 355px;
+    left: -63px;
+    background-color: white;
+}
+
+.product_card_name {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    padding-bottom: 7px;
+}
+
+.client_name {
+    text-align: center;
+}
+
+.card--img {
+    border-radius: 50%;
+    max-width: 58px;
+    object-fit: cover;
+    object-position: center;
+    background-color: rgba(1, 153, 109, 0.2);
+}
+
+.card_list_name {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 157%;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.card_list_poits {
+    list-style: disc;
+    text-align: left;
+    padding: 8px 0;
+}
+
+.product--item {
+    display: flex;
+    flex-direction: column;
+    max-width: 584px;
+    gap: 20px;
+}
+
+footer {
+    padding: 95px 20px 144px 20px;
+}
+
+.footer--logo {
+    width: 108px;
+}
+
+.footer--content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.footer--link {
+    color: white;
+}
